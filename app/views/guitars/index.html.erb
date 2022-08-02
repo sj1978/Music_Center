@@ -1,1 +1,14 @@
-<h1>All the guitars</h1>
+<main>
+<section>
+<div class="container">
+<% @guitars.each do |guitar|%>
+<div class="row">
+<%= guitar.name%>
+<br>
+us$:<%= guitar.price%>
+ <%= image_tag (guitar.image_url), style: 'height:4vw;width:4vw;'%>
+</div>
+|<% end %>
+</div>
+</section>
+</main>
