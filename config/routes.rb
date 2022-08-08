@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 resources :guitars   
+resources :basses
   # Defines the root path route ("/")
-  root "guitars#index"
+  root "home#index"
 end
