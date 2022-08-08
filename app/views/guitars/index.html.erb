@@ -1,12 +1,15 @@
 <main>
 <section>
 <div class="container">
-<% @guitars.each do |guitar|%>
+<%@guitars.each do |guitar|%>
 <div class="row">
-<%= guitar.name%>
+<p class="guitar-p"><%= guitar.name%></p>
+
 <br>
 us$:<%= guitar.price%>
- <%= image_tag (guitar.image_url), style: 'height:4vw;width:4vw;'%>
+ <%= image_tag (guitar.image_url), style: 'height:11vw;width:11vw;'%>
+
+   <%= link_to "See More.." ,guitar_path(guitar.id),method: :get, class:"more-btn" %>
 </div>
 |<% end %>
 </div>
