@@ -1,7 +1,7 @@
 
 .main{ 
     margin: 0 auto;
-    width:100%;
+   
 
 }
 
@@ -30,7 +30,8 @@
    height: 2vw;
    font-size: 1vw;
    color:rgb(59, 58, 55);
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;ont-weight: bold;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: bold;
    margin: 1vw 1vw;
 }
 .more-btn {
@@ -41,4 +42,14 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
     border-radius: 5px;
+ }
+
+ .homecats{ 
+    width: 100%;
+    margin: 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid rgb(5, 5, 5);
+  
  }
