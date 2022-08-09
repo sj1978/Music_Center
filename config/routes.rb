@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-resources :guitars   
-resources :basses
+resources :instruments   
+
   # Defines the root path route ("/")
   root "home#index"
 end
