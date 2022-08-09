@@ -1,2 +1,0 @@
-class Bass < ApplicationRecord
-end
