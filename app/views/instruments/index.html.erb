@@ -1,0 +1,17 @@
+<main>
+<section>
+<div class="container">
+<%@guitars.each do |guitar|%>
+<div class="row">
+<p class="guitar-p"><%= guitar.name%></p>
+
+<br>
+us$:<%= guitar.price%>
+ <%= image_tag (guitar.image), style: 'height:11vw;width:11vw;'%>
+   <%= link_to "See More.." ,"/instruments/#{guitar.id}", class:"more-btn" %>
+</div>
+|<% end %>
+</div>
+</section>
+<%= link_to "Home", root_path %>
+</main>
