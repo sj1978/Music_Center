@@ -8,5 +8,5 @@
   <p>
   <%= @guitar.description %>
   </p>
-  <%= button_to "Add to Cart", "#" %>
+  <%= button_to "Add to Cart", line_items_path(instrument_id: @guitar) %>
 <%= link_to "Back", instruments_path %>
