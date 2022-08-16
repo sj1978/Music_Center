@@ -53,3 +53,16 @@
     border: 2px solid rgb(5, 5, 5);
   
  }
+ .cart-img { 
+    bottom: 4px solid black;
+    height: 11vw;
+ }
+ .keep {
+    background-color: rgb(15, 15, 14);
+    border: 1px solid gray;
+    color: whitesmoke;
+    font-size: 0.9vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+ }

@@ -1,20 +1,21 @@
 
 
 <div >
-  <%= link_to 'Keep Shopping', instruments_path, class: 'button is-warning' %>
+  <%= link_to 'Keep Shopping', instruments_path, class: 'keep' %>
 </div>
 <hr />
-<section class="section">
+<section >
   <%= render(@cart.line_items) %>
 
-  <div class="columns">
-    <div class="column">
-      <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: "button is-danger" %>
+  <div >
+    <div >
+      <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure? " }, class: 'keep' %>
     </div>
-    <div class="column total has-text-right">
-      <h4 class="title is-4">
-        <span class="f5 has-text-grey">Total:</span> <%= number_to_currency(@cart.total_price) %>
+    <div >
+      <h4 >
+        <span >Total:</span> <%= number_to_currency(@cart.total_price) %>
       </h4>
     </div>
   </div>
+  <%= link_to "Home", root_path %>
 </section>
