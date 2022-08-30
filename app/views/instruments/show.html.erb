@@ -1,12 +1,21 @@
-<h1> show</h1>
-<p>
+<section class="cart-card">
+<div class="container-cart">
+<p  class="show-name">
   <%= @guitar.name %>
   </p>
-  <p>
-  <%= @guitar.price %>
+  <div class="line-price">
+  <p class="show-price">
+  Price: $<%= @guitar.price %>
   </p>
-  <p>
+    <%= button_to "Add to Cart", line_items_path(instrument_id: @guitar),class:"btn-cart"%>
+  </div>
+  <p class="cart-desc">
   <%= @guitar.description %>
   </p>
-  <%= button_to "Add to Cart", line_items_path(instrument_id: @guitar) %>
+  <p>
+  <%= image_tag (@guitar.image) , style: 'height:13vw;width:14vw;' %>
+  </p>
+
 <%= link_to "Back", instruments_path %>
+</div>
+</section>

@@ -14,8 +14,10 @@
     <div >
       <h4 >
         <span >Total:</span> <%= number_to_currency(@cart.total_price) %>
+      Total Items in Cart  <%=  @cart.cart_length %>  
       </h4>
     </div>
   </div>
   <%= link_to "Home", root_path %>
+  
 </section>
